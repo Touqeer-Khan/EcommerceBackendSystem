@@ -15,4 +15,6 @@ public interface productRepository extends JpaRepository<Product, Long> {
 
     @Override
     List<Product> findAll();
+
+    void deleteById(Long id);
 }

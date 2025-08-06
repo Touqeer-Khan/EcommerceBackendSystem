@@ -64,4 +64,17 @@ public class FakeStoreProductService implements ProductService{
         return products;
 
     }
+
+    @Override
+    public Product createProduct(Product product) {
+        return null;
+    }
+
+    @Override
+    public void deleteProductById(Long id)  {
+
+
+    }
+
+
 }

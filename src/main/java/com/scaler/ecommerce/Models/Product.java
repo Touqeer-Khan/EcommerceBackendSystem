@@ -1,6 +1,7 @@
 package com.scaler.ecommerce.Models;
 
 import ch.qos.logback.core.model.Model;
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
@@ -16,7 +17,7 @@ public class Product extends base {
     private String description;
     private String imageUrl;
     private double price;
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.PERSIST)
     Category category;
 
 }
